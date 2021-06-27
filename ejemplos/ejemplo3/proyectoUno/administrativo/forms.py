@@ -45,12 +45,10 @@ class EstudianteForm(ModelForm):
             raise forms.ValidationError("Ingrese correo válido para la Universidad")
         return valor
 
-
 class NumeroTelefonicoForm(ModelForm):
     class Meta:
         model = NumeroTelefonico
         fields = ['telefono', 'tipo', 'estudiante',  'costo_plan']
-
 
 class NumeroTelefonicoEstudianteForm(ModelForm):
 
